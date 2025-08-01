@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* I hope you don't mind I generated the css variables with Cursor AI :)) */
+
+@layer base {
+  :root {
+    --background: 205 100% 98%;
+    --foreground: 213 27% 14%;
+
+    --card: 209 100% 99%;
+    --card-foreground: 213 27% 14%;
+
+    --popover: 209 100% 99%;
+    --popover-foreground: 213 27% 14%;
+
+    --primary: 215 98% 35%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 215 98% 45%;
+
+    --secondary: 200 50% 92%;
+    --secondary-foreground: 213 27% 14%;
+
+    --muted: 200 50% 95%;
+    --muted-foreground: 215 15% 50%;
+
+    --accent: 180 100% 88%;
+    --accent-foreground: 213 27% 14%;
+
+    --destructive: 0 95% 55%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 200 30% 85%;
+    --input: 200 30% 90%;
+    --ring: 215 98% 35%;
+
+    --ocean: 205 87% 45%;
+    --ocean-deep: 210 100% 20%;
+    --hit: 0 95% 55%;
+    --miss: #edf3f7;
+    --ship-sunk: 240 30% 25%;
+    --water: 200 100% 85%;
+    --grid-line: 200 50% 70%;
+
+    /* Gradients */
+    --gradient-ocean: linear-gradient(
+      135deg,
+      hsl(205 87% 65%),
+      hsl(215 98% 35%)
+    );
+    --gradient-wave: linear-gradient(
+      180deg,
+      hsl(200 100% 85%),
+      hsl(205 87% 75%)
+    );
+    --gradient-ship: linear-gradient(
+      135deg,
+      hsl(240 30% 25%),
+      hsl(240 30% 35%)
+    );
+
+    /* Shadows */
+    --shadow-ocean: 0 8px 32px hsl(215 98% 35% / 0.3);
+    --shadow-ship: 0 4px 16px hsl(240 30% 25% / 0.4);
+    --shadow-glow: 0 0 20px hsl(180 100% 50% / 0.5);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
